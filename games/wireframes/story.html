@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	body,
+html {
+  width           : 100%;
+  height          : 100%;
+  margin          : 0;
+  padding         : 0;
+  background: url(../img/bg.jpg) no-repeat center center fixed; 
+font-family: 'Comfortaa', cursive;
+  color           : #ffffff;
+  font-size       : 30px;
+}
+
+section{
+  padding: 2rem;
+  box-sizing: border-box;
+}
+span{
+  cursor: pointer;
+}
+.nameofpara{
+	color:
+	#534DE7;
+
+}
+
+</style>
+<body>
+	<section>
+		<h1 class="nameofpara">An adventurous </h1>
+		<p>Meet Maya, an adventurous 12-year-old with a love for exploring her neighborhood. One evening, she noticed that some streetlights in her area were broken, making the streets dark and unsafe.
+
+			Remembering from school that children have the right to be protected and safe, Maya decided to take action. She spoke to her parents about the issue, who encouraged her to contact the local authorities.
+			
+			Maya wrote a heartfelt letter explaining the situation and highlighting the importance of well-lit streets for everyone's safety, especially children. To her surprise, the city responded promptly. They fixed the broken streetlights and even added some extra ones for better visibility.
+			
+			Maya's neighborhood became safer for everyone, thanks to her advocacy. She learned that even as a child, she had the right to speak up for her safety and the safety of her community.
+		</p>
+	  </section>
+	  <script>
+		$(document).ready(function() {
+			var text = $("p").text();
+			var newtext = " <span> ";
+			var newchar = " </span><span> ";
+			newtext += text.split(' ').join(newchar);
+			$("p").html(newtext);
+			$("span").hover(function() {
+			  $(this).css({
+				"background-color":"#ff5252",
+				"color": "#000"
+			  });
+			}, function() {
+			  $(this).css({
+			 "background-color": "unset",
+				"color": "#fff"
+			  });
+			});
+		  });
+	  </script>
+</body>
+</html>
