@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width initial-scale=1">
+		<meta name="description" content="This is a quiz designed for basic HTML, CSS, and JavaScript basics.">
+		<title>Quiz - HTML, CSS, and JS Basics</title>
+		<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/layout.css">
+		<link rel="stylesheet" type="text/css" href="css/styl.css">
+	</head>
+	<body>
+		<header>
+			<section class="title">
+				<h1>Game<span class="sub-title">Selection</span></h1>
+			</section>
+			<button type="button" class="hide hint-btn">Hint</button>
+		</header>
+
+		<main>
+			<article class="begin question-answer-wrapper">
+				<section class="hide results-wrapper">
+					<p class="quiz-end-score"></p>
+					<div class="quiz-end-feedback">
+						<p class="quiz-end-feedback-p"></p>
+						<div class="quiz-end-categories"></div>
+					</div>
+					
+				</section>
+				<section class="question-wrapper">
+					<p class="question">Which type of game you want to play?</p>
+					<p class="hide code"></code>
+					<button type="button" class="hide submit-btn submit-btn-landscape" disabled>Submit</button>
+				</section>
+				<form class="begin answer-wrapper">
+					<a href="/games/quiz.html"><button type="button" class="start-quiz">Game 1</button></a>
+					<a href="/games/quiz.html"><button type="button" class="start-quiz">Game 2</button></a>
+					<input type="submit" class="hide submit-btn submit-btn-portrait" value="Submit" disabled>
+				</form>
+			</article>
+		</main>
+
+		<div id="output">
+		</div>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
